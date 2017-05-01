@@ -1,0 +1,32 @@
+//Source file: D:/свеаю/нно в2/кюа/11/Classes/TransactionMgr.idl
+
+#ifndef __TRANSACTIONMGR_DEFINED
+#define __TRANSACTIONMGR_DEFINED
+
+/* CmIdentification
+  %X% %Q% %Z% %W% */
+
+#include "OrderItem.idl"
+#include "Order.idl"
+
+interface TransactionMgr {
+    typedef sequence <OrderItem> theOrderItem_def;
+    
+    typedef sequence <Order> theOrder_def;
+    
+    attribute theOrderItem_def theOrderItem;
+    attribute theOrder_def theOrder;
+    
+    /* 
+    @roseuid 590241940314 */
+    boolean SaveOrder (
+        in long OrderID
+        );
+        
+    /* 
+    @roseuid 590241D8020E */
+    long Commit ();
+        
+};
+
+#endif

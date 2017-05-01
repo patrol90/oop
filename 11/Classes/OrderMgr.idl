@@ -1,0 +1,24 @@
+//Source file: D:/свеаю/нно в2/кюа/11/Classes/OrderMgr.idl
+
+#ifndef __ORDERMGR_DEFINED
+#define __ORDERMGR_DEFINED
+
+/* CmIdentification
+  %X% %Q% %Z% %W% */
+
+#include "TransactionMgr.idl"
+#include "Order.idl"
+
+interface OrderMgr {
+    typedef sequence <Order> theOrder_def;
+    
+    attribute TransactionMgr theTransactionMgr;
+    attribute theOrder_def theOrder;
+    
+    /* 
+    @roseuid 5902415201E2 */
+    boolean SaveOrder ();
+        
+};
+
+#endif

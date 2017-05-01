@@ -1,0 +1,12 @@
+//Source file: D:/свеаю/нно в2/кюа/11/Classes/TransactionMgr.idl
+
+#ifndef __TRANSACTIONMGR_DEFINED
+#define __TRANSACTIONMGR_DEFINED
+
+/* CmIdentification
+  %X% %Q% %Z% %W% */
+
+#include "OrderItem.idl"
+#include "Order.idl"
+
+#endif

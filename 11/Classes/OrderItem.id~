@@ -1,0 +1,29 @@
+//Source file: D:/свеаю/нно в2/кюа/11/Classes/OrderItem.idl
+
+#ifndef __ORDERITEM_DEFINED
+#define __ORDERITEM_DEFINED
+
+/* CmIdentification
+  %X% %Q% %Z% %W% */
+
+interface OrderItem {
+    attribute long ItemID;
+    attribute string ItemDescription;
+    
+    /* 
+    @roseuid 5904702800C9 */
+    boolean Create ();
+        
+    /* 
+    @roseuid 5904703003E3 */
+    boolean SetInfo (
+        in long ID
+        );
+        
+    /* 
+    @roseuid 590470350058 */
+    string GetInfo ();
+        
+};
+
+#endif

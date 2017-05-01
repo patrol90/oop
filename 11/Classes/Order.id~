@@ -1,0 +1,39 @@
+//Source file: D:/свеаю/нно в2/кюа/11/Classes/Order.idl
+
+#ifndef __ORDER_DEFINED
+#define __ORDER_DEFINED
+
+/* CmIdentification
+  %X% %Q% %Z% %W% */
+
+#include "OrderItem.idl"
+
+interface Order {
+    typedef sequence <OrderItem> theOrderItem_def;
+    
+    attribute long OrderNumber;
+    attribute string CustromerName;
+    attribute long OrderDate;
+    attribute long OrderFillDate;
+    attribute theOrderItem_def theOrderItem;
+    
+    /* 
+    @roseuid 5902416D0242 */
+    boolean Create ();
+        
+    /* 
+    @roseuid 590241810146 */
+    boolean SetInfo (
+        in long OrderNum,
+        in string Customer,
+        in long OrderDate,
+        in long FillDate
+        );
+        
+    /* 
+    @roseuid 590241AA0155 */
+    string GetInfo ();
+        
+};
+
+#endif
