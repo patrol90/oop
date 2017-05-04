@@ -1454,7 +1454,11 @@
 						(609, 878)
 						(996, 987))
 					    line_style 	0
-					    x_offset   	FALSE))))))
+					    x_offset   	FALSE)))))
+			module     	"Component View::Entities::Order (module spec)"
+			quidu      	"59062D7F00EF"
+			module     	"Component View::Entities::Order (module body)"
+			quidu      	"59062DDE0158")
 		    (object Class "OrderItem"
 			quid       	"59046F4602C1"
 			stereotype 	"entity"
@@ -1488,7 +1492,11 @@
 				type       	"Integer")
 			    (object ClassAttribute "ItemDescription"
 				quid       	"590470090030"
-				type       	"String"))))
+				type       	"String"))
+			module     	"Component View::Entities::OrderItem (module body)"
+			quidu      	"59062DB80235"
+			module     	"Component View::Entities::OrderItem (module spec)"
+			quidu      	"59062D67015B"))
 		logical_presentations 	(list unit_reference_list
 		    (object ClassDiagram "Main"
 			quid       	"59038FDE0328"
@@ -1542,7 +1550,11 @@
 				quid       	"590240D30216"
 				concurrency 	"Sequential"
 				opExportControl 	"Public"
-				uid        	0)))
+				uid        	0))
+			module     	"Component View::Boundaries ::OrderOptions (module body)"
+			quidu      	"59062EE8014D"
+			module     	"Component View::Boundaries ::OrderOptions (module spec)"
+			quidu      	"59062ED800F5")
 		    (object Class "OrderDetail"
 			quid       	"5902404F034E"
 			stereotype 	"boundary"
@@ -1564,7 +1576,11 @@
 				result     	"Boolean"
 				concurrency 	"Sequential"
 				opExportControl 	"Public"
-				uid        	0))))
+				uid        	0))
+			module     	"Component View::Boundaries ::OrderDetail (module body)"
+			quidu      	"59062EEA0209"
+			module     	"Component View::Boundaries ::OrderDetail (module spec)"
+			quidu      	"59062EE30039"))
 		logical_presentations 	(list unit_reference_list
 		    (object ClassDiagram "Main"
 			quid       	"59038F8F01BC"
@@ -1652,7 +1668,11 @@
 				result     	"Boolean"
 				concurrency 	"Sequential"
 				opExportControl 	"Public"
-				uid        	0)))
+				uid        	0))
+			module     	"Component View::Control ::OrderMgr (module body)"
+			quidu      	"59062FCF01C4"
+			module     	"Component View::Control ::OrderMgr (module spec)"
+			quidu      	"59062FDB01F3")
 		    (object Class "TransactionMgr"
 			quid       	"5902408B0353"
 			stereotype 	"control"
@@ -1672,7 +1692,11 @@
 				result     	"Integer"
 				concurrency 	"Sequential"
 				opExportControl 	"Public"
-				uid        	0))))
+				uid        	0))
+			module     	"Component View::Control ::TransactionMgr (module body)"
+			quidu      	"59062FD401B5"
+			module     	"Component View::Control ::TransactionMgr (module spec)"
+			quidu      	"59062FE002AA"))
 		logical_presentations 	(list unit_reference_list
 		    (object ClassDiagram "Main"
 			quid       	"5903900F0220"
@@ -4385,7 +4409,9 @@
 		    (object module "OrderItem" "PackageType" "Specification"
 			quid       	"59062D67015B"
 			stereotype 	"Package Specification"
-			language   	"")
+			language   	""
+			class      	"Logical View::Entities::OrderItem"
+			quidu      	"59046F4602C1")
 		    (object module "Order" "PackageType" "Specification"
 			quid       	"59062D7F00EF"
 			stereotype 	"Package Specification"
@@ -4395,7 +4421,9 @@
 				supplier   	"Component View::Entities::OrderItem"
 				quidu      	"59062D67015B"
 				supplier_is_spec 	TRUE))
-			language   	"")
+			language   	""
+			class      	"Logical View::Entities::Order"
+			quidu      	"590240760354")
 		    (object module "OrderItem" "PackageType" "Body"
 			quid       	"59062DB80235"
 			stereotype 	"Package Body"
@@ -4405,7 +4433,9 @@
 				supplier   	"Component View::Entities::OrderItem"
 				quidu      	"59062D67015B"
 				supplier_is_spec 	TRUE))
-			language   	"")
+			language   	""
+			class      	"Logical View::Entities::OrderItem"
+			quidu      	"59046F4602C1")
 		    (object module "Order" "PackageType" "Body"
 			quid       	"59062DDE0158"
 			stereotype 	"Package Body"
@@ -4415,7 +4445,9 @@
 				supplier   	"Component View::Entities::Order"
 				quidu      	"59062D7F00EF"
 				supplier_is_spec 	TRUE))
-			language   	"")
+			language   	""
+			class      	"Logical View::Entities::Order"
+			quidu      	"590240760354")
 		    (object SubSystem "NewPackae"
 			quid       	"59062DA80228"
 			physical_models 	(list unit_reference_list)
@@ -4590,7 +4622,9 @@
 				supplier   	"Component View::Boundaries ::OrderDetail"
 				quidu      	"59062EE30039"
 				supplier_is_spec 	TRUE))
-			language   	"")
+			language   	""
+			class      	"Logical View::Boundaries::OrderOptions"
+			quidu      	"59023FE4033B")
 		    (object module "OrderDetail" "PackageType" "Specification"
 			quid       	"59062EE30039"
 			stereotype 	"Package Specification"
@@ -4600,7 +4634,9 @@
 				supplier   	"Component View::Control ::OrderMgr"
 				quidu      	"59062FDB01F3"
 				supplier_is_spec 	TRUE))
-			language   	"")
+			language   	""
+			class      	"Logical View::Boundaries::OrderDetail"
+			quidu      	"5902404F034E")
 		    (object module "OrderOptions" "PackageType" "Body"
 			quid       	"59062EE8014D"
 			stereotype 	"Package Body"
@@ -4610,7 +4646,9 @@
 				supplier   	"Component View::Boundaries ::OrderOptions"
 				quidu      	"59062ED800F5"
 				supplier_is_spec 	TRUE))
-			language   	"")
+			language   	""
+			class      	"Logical View::Boundaries::OrderOptions"
+			quidu      	"59023FE4033B")
 		    (object module "OrderDetail" "PackageType" "Body"
 			quid       	"59062EEA0209"
 			stereotype 	"Package Body"
@@ -4620,7 +4658,9 @@
 				supplier   	"Component View::Boundaries ::OrderDetail"
 				quidu      	"59062EE30039"
 				supplier_is_spec 	TRUE))
-			language   	""))
+			language   	""
+			class      	"Logical View::Boundaries::OrderDetail"
+			quidu      	"5902404F034E"))
 		physical_presentations 	(list unit_reference_list
 		    (object Module_Diagram "Main"
 			quid       	"59062ECE0097"
@@ -4791,7 +4831,9 @@
 				supplier   	"Component View::Control ::OrderMgr"
 				quidu      	"59062FDB01F3"
 				supplier_is_spec 	TRUE))
-			language   	"")
+			language   	""
+			class      	"Logical View::Control::OrderMgr"
+			quidu      	"59024068031F")
 		    (object module "TransactionMgr" "PackageType" "Body"
 			quid       	"59062FD401B5"
 			stereotype 	"Package Body"
@@ -4801,7 +4843,9 @@
 				supplier   	"Component View::Control ::TransactionMgr"
 				quidu      	"59062FE002AA"
 				supplier_is_spec 	TRUE))
-			language   	"")
+			language   	""
+			class      	"Logical View::Control::TransactionMgr"
+			quidu      	"5902408B0353")
 		    (object module "OrderMgr" "PackageType" "Specification"
 			quid       	"59062FDB01F3"
 			stereotype 	"Package Specification"
@@ -4816,7 +4860,9 @@
 				supplier   	"Component View::Entities::Order"
 				quidu      	"59062D7F00EF"
 				supplier_is_spec 	TRUE))
-			language   	"")
+			language   	""
+			class      	"Logical View::Control::OrderMgr"
+			quidu      	"59024068031F")
 		    (object module "TransactionMgr" "PackageType" "Specification"
 			quid       	"59062FE002AA"
 			stereotype 	"Package Specification"
@@ -4831,7 +4877,9 @@
 				supplier   	"Component View::Entities::OrderItem"
 				quidu      	"59062D67015B"
 				supplier_is_spec 	TRUE))
-			language   	""))
+			language   	""
+			class      	"Logical View::Control::TransactionMgr"
+			quidu      	"5902408B0353"))
 		physical_presentations 	(list unit_reference_list
 		    (object Module_Diagram "Main"
 			quid       	"59062FBB0085"

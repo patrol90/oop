@@ -222,7 +222,7 @@
 		max_height 	28350
 		max_width  	21600
 		origin_x   	0
-		origin_y   	534
+		origin_y   	535
 		items      	(list diagram_item_list
 		    (object UseCaseView "Use Case View::Изменить существующий заказ" @1
 			location   	(753, 624)
@@ -304,7 +304,7 @@
 				supplier   	@1
 				vertices   	(list Points
 				    (433, 617)
-				    (643, 620))
+				    (642, 620))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$5" @5
 				Parent_View 	@3
@@ -373,7 +373,7 @@
 			quidu      	"59022A9C0197"
 			height     	118)
 		    (object AssociationViewNew "$UNNAMED$0" @8
-			location   	(406, 491)
+			location   	(407, 490)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -390,27 +390,27 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$1" @9
 				Parent_View 	@8
-				location   	(212, 22)
+				location   	(213, 21)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"59022C40011F"
 				client     	@8
 				supplier   	@7
 				vertices   	(list Points
-				    (406, 491)
-				    (780, 303))
+				    (407, 490)
+				    (590, 397))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$2" @10
 				Parent_View 	@8
-				location   	(212, 22)
+				location   	(213, 21)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"59022C40012F"
 				client     	@8
 				supplier   	@2
 				vertices   	(list Points
-				    (406, 491)
-				    (225, 581))
+				    (407, 490)
+				    (225, 583))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$6" @11
 			location   	(1267, 337)
@@ -438,7 +438,7 @@
 				supplier   	@6
 				vertices   	(list Points
 				    (1267, 337)
-				    (1644, 367))
+				    (1646, 367))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$8" @13
 				Parent_View 	@11
@@ -450,7 +450,7 @@
 				supplier   	@7
 				vertices   	(list Points
 				    (1267, 337)
-				    (888, 307))
+				    (888, 308))
 				line_style 	0)))
 		    (object UseCaseView "Use Case View::Напечатать инвентарную опись" @14
 			location   	(760, 1120)
@@ -532,7 +532,7 @@
 			annotation 	8
 			autoResize 	TRUE)
 		    (object AssociationViewNew "$UNNAMED$9" @17
-			location   	(344, 1260)
+			location   	(341, 1262)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -549,27 +549,27 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$10" @18
 				Parent_View 	@17
-				location   	(169, -62)
+				location   	(166, -60)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"59022C6300FD"
 				client     	@17
 				supplier   	@14
 				vertices   	(list Points
-				    (344, 1260)
-				    (439, 1226))
+				    (341, 1262)
+				    (450, 1225))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$11" @19
 				Parent_View 	@17
-				location   	(169, -62)
+				location   	(166, -60)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"59022C6300FF"
 				client     	@17
 				supplier   	@16
 				vertices   	(list Points
-				    (344, 1260)
-				    (232, 1297))
+				    (341, 1262)
+				    (232, 1299))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$12" @20
 			location   	(442, 1370)
@@ -597,7 +597,7 @@
 				supplier   	@15
 				vertices   	(list Points
 				    (442, 1370)
-				    (653, 1409))
+				    (653, 1410))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$14" @22
 				Parent_View 	@20
@@ -609,7 +609,7 @@
 				supplier   	@16
 				vertices   	(list Points
 				    (442, 1370)
-				    (232, 1330))
+				    (232, 1331))
 				line_style 	0)))
 		    (object ClassView "Class" "Use Case View::Клекр в магазине" @23
 			ShowCompartmentStereotypes 	TRUE
@@ -703,7 +703,7 @@
 				supplier   	@23
 				vertices   	(list Points
 				    (2040, 1370)
-				    (2228, 1365))
+				    (2230, 1365))
 				line_style 	0)))
 		    (object UseCaseView "Use Case View::Отклонить заказ" @28
 			location   	(2221, 1034)
@@ -767,7 +767,7 @@
 			    orientation 	0)
 			stereotype 	(object SegLabel @31
 			    Parent_View 	@29
-			    location   	(2019, 1104)
+			    location   	(2019, 1113)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -800,7 +800,7 @@
 				supplier   	@24
 				vertices   	(list Points
 				    (1930, 1241)
-				    (1815, 1322))
+				    (1816, 1322))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$23" @33
 				Parent_View 	@29
@@ -812,7 +812,7 @@
 				supplier   	@28
 				vertices   	(list Points
 				    (1930, 1241)
-				    (1996, 1195))
+				    (2044, 1161))
 				line_style 	0)))))))
     root_category 	(object Class_Category "Logical View"
 	quid       	"59022972005F"
@@ -883,16 +883,24 @@
 			operations 	(list Operations
 			    (object Operation "Create"
 				quid       	"5904702800C9"
+				result     	"Boolean"
 				concurrency 	"Sequential"
 				opExportControl 	"Public"
 				uid        	0)
 			    (object Operation "SetInfo"
 				quid       	"5904703003E3"
+				parameters 	(list Parameters
+				    (object Parameter "ID"
+					quid       	"5904731B011E"
+					type       	"Integer"
+					initv      	"0"))
+				result     	"Boolean"
 				concurrency 	"Sequential"
 				opExportControl 	"Public"
 				uid        	0)
 			    (object Operation "GetInfo"
 				quid       	"590470350058"
+				result     	"String"
 				concurrency 	"Sequential"
 				opExportControl 	"Public"
 				uid        	0))
@@ -981,16 +989,19 @@
 			operations 	(list Operations
 			    (object Operation "Open"
 				quid       	"590240FB008F"
+				result     	"Boolean"
 				concurrency 	"Sequential"
 				opExportControl 	"Public"
 				uid        	0)
 			    (object Operation "Submit Info"
 				quid       	"59024109015B"
+				result     	"Boolean"
 				concurrency 	"Sequential"
 				opExportControl 	"Public"
 				uid        	0)
 			    (object Operation "Save"
 				quid       	"590241410198"
+				result     	"Boolean"
 				concurrency 	"Sequential"
 				opExportControl 	"Public"
 				uid        	0))))
@@ -1034,7 +1045,7 @@
 				quidu      	"5902404F034E"
 				compartment 	(object Compartment
 				    Parent_View 	@35
-				    location   	(351, 791)
+				    location   	(360, 791)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -1114,6 +1125,7 @@
 			operations 	(list Operations
 			    (object Operation "Save Order"
 				quid       	"5902415201E2"
+				result     	"Boolean"
 				concurrency 	"Sequential"
 				opExportControl 	"Public"
 				uid        	0)))
@@ -1123,11 +1135,17 @@
 			operations 	(list Operations
 			    (object Operation "Save Order"
 				quid       	"590241940314"
+				parameters 	(list Parameters
+				    (object Parameter "OrderID"
+					quid       	"5904746B01CE"
+					type       	"Integer"))
+				result     	"Boolean"
 				concurrency 	"Sequential"
 				opExportControl 	"Public"
 				uid        	0)
 			    (object Operation "Commit"
 				quid       	"590241D8020E"
+				result     	"Integer"
 				concurrency 	"Sequential"
 				opExportControl 	"Public"
 				uid        	0))))
@@ -1171,7 +1189,7 @@
 				quidu      	"5902408B0353"
 				compartment 	(object Compartment
 				    Parent_View 	@37
-				    location   	(1326, 916)
+				    location   	(1330, 916)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -1220,7 +1238,7 @@
 				quidu      	"59024068031F"
 				compartment 	(object Compartment
 				    Parent_View 	@38
-				    location   	(756, 940)
+				    location   	(760, 940)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -1807,7 +1825,7 @@
 			quidu      	"59046F4602C1"
 			compartment 	(object Compartment
 			    Parent_View 	@48
-			    location   	(792, 466)
+			    location   	(696, 466)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1821,7 +1839,7 @@
 			    icon_style 	"Icon"
 			    anchor     	2
 			    nlines     	6
-			    max_width  	436
+			    max_width  	628
 			    justify    	0)
 			height     	154
 			annotation 	8
